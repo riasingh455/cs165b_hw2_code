@@ -97,7 +97,7 @@ def run(Xtrain_file: str, Ytrain_file: str, test_data_file: str, pred_file: str)
 
     X_train, X_test = preprocess_data(X_train, X_test)
 
-    model = SVMClassifier(lambda_reg=1e-3, learning_rate=1e-2, epochs=15, shuffle=True, seed=0)
+    model = SVMClassifier(lambda_reg=1e-1, learning_rate=1e-2, epochs=15, shuffle=True, seed=0)
     model.train(X_train, y_train)
 
     predictions = model.predict(X_test)

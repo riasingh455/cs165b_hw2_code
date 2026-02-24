@@ -97,7 +97,7 @@ def run(Xtrain_file: str, Ytrain_file: str, test_data_file: str, pred_file
 
     X_train, X_test = preprocess_data(X_train, X_test)
 
-    model = VotedPerceptron(epochs=10)
+    model = VotedPerceptron(epochs=4)
     model.train(X_train, y_train)
 
     predictions = model.predict(X_test)
