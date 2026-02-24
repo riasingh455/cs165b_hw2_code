@@ -31,7 +31,7 @@ def preprocess_data(X_train , X_test):
 class VotedPerceptron: 
     # or SVMClassifier for svm.py
     """Classifier class.""" 
-    def __init__(self, epochs=10):
+    def __init__(self, epochs=4):
         self.epochs = epochs
         self.weight_list = None
         self.count_list = None

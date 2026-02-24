@@ -38,7 +38,7 @@ def preprocess_data(X_train, X_test):
 
 class SVMClassifier:
     """Support Vector Machine Classifier."""
-    def __init__(self, lambda_reg=1e-3, learning_rate=1e-2, epochs=15, shuffle=True, seed=0):
+    def __init__(self, lambda_reg=1e-1, learning_rate=1e-2, epochs=15, shuffle=True, seed=0):
         self.lambda_reg = float(lambda_reg)
         self.learning_rate = float(learning_rate)
         self.epochs = int(epochs)
